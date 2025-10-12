@@ -34,19 +34,21 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 # Fungsi untuk Menampilkan Header BASE dengan Warna
 def display_header():
     header_lines = [ 
-    f"{Fore.GREEN}     
-    f"{Fore.GREEN}     
-    f"{Fore.GREEN}     
-    f"{Fore.RED}     
-    f"{Fore.RED}     
-    f"{Fore.RED}    
-    f"{Fore.RED}     
-    f"{Fore.RED}    
-    f"{Fore.CYAN}     
-    f"{Fore.CYAN}   
-    f"{Fore.CYAN}     
-    f"{Fore.GREEN}     
-    f"{Fore.YELLOW}    
+    f"{Fore.GREEN} ",    
+    f"{Fore.RED}                                                                        ╔╗    ╔╗ ╔╗",
+    f"{Fore.RED}                                                                         ║║   ║║ ║║ ",  
+    f"{Fore.RED}                                                                          ║║  ║║ ║║ ",  
+    f"{Fore.RED}                                    ╔════╗         ╔═════════╗  ║║ ║║ ║║ ", 
+    f"{Fore.RED}                                    ║╔══╗║         ║╔══════╗ ╝    ║║║║ ║║",      
+    f"{Fore.RED}                               ╔══╝╚══╝╚═════╝╚═════╝ ╝     ╔══╝║ ║║ ",    
+    f"{Fore.RED}                             ╔╝                                 ╔╝       ║     ║ ║║",
+    f"{Fore.RED}                           ╔╝╔══╗       ╔═══════════╝          ╚═══╝ ╚╝",
+    f"{Fore.RED}                         ╔╝╔╝    ╚════╝  ",  
+    f"{Fore.RED}                       ╔╝╔╝",    
+    f"{Fore.RED}                  ╔══╝╔╝",  
+    f"{Fore.RED}                ║     ║",
+    f"{Fore.RED}               ╚═══╝",
+    f"{Fore.YELLOW} ",   
      ]
 # Tampilkan header dengan warna
     for line in header_lines:
