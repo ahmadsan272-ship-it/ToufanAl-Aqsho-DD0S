@@ -61,14 +61,14 @@ def display_header():
       print(line)
 
     # Versi dan URL
-    print(f"{Fore.WHITE}{Style.BRIGHT}{'═' * 42}v.1.0")
-    print(f"{Fore.BLUE}{Style.BRIGHT}{'═' * 15}Author By: KunFay'99")
-    print(f"{Fore.CYAN}|{'═' * 55}|")
+    print(f"{Fore.WHITE}{Style.BRIGHT}{'' * 42}v.1.0")
+    print(f"{Fore.BLUE}{Style.BRIGHT}{'' * 15}Author By: KunFay'99")
+    print(f"{Fore.RED}║{'═' * 55║")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}|{' ' * 4}[?] {prompt_message.ljust(63)}|")
-    print(f"{Fore.GREEN}|{'═' * 55}|")
+    print(f"{Fore.GREEN}║{' ' * 4}[?] {prompt_message.ljust(63)}║")
+    print(f"{Fore.WHITE}║{'═' * 55}║")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
