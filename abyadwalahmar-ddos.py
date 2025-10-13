@@ -14,7 +14,8 @@ init(autoreset=True)
 logging.basicConfig(
     filename='attack.log',
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',  # Perbaiki dari levellevel menjadi levelname   
+    format='%(asctime)s - %(levelname)s - %(message)s',  
+    # Perbaiki dari levellevel menjadi levelname   
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
