@@ -38,23 +38,23 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 # Fungsi untuk Menampilkan Header BASE dengan Warna
 def display_header():
     header_lines = [ 
-    f"{Fore.YELLOW}╔═════════════════════════════════════════════╗  ",    
-    f"{Fore.YELLOW}║ {Fore.RED}                             ╔╗    ╔╗╔╗{Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║ {Fore.RED}                              ║║   ║║║║{Fore.YELLOW}║ ",  
-    f"{Fore.YELLOW}║ {Fore.RED}                               ║║  ║║║║{Fore.YELLOW}║ ",  
-    f"{Fore.YELLOW}║ {Fore.RED}          ╔════╗     ╔═════════╗║║ ║║║║{Fore.YELLOW}║ ", 
-    f"{Fore.YELLOW}║ {Fore.RED}          ║╔══╗║     ║╔═════╗ ╔╝ ║║║║║║{Fore.YELLOW}║ ",      
-    f"{Fore.YELLOW}║ {Fore.RED}       ╔══╝╚══╝╚═════╝╚═════╝ ╝╔═══╝║║║{Fore.WHITE}╔╗   ╔╗╔╗{Fore.YELLOW}║ ",    
-    f"{Fore.YELLOW}║ {Fore.RED}      ╔╝                    ╔╝ ║    ║║║{Fore.WHITE} ║║  ║║║║╔══════╗{Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║ {Fore.RED}     ╔╝╔══╗    ╔══════════╝    ╚════╝╚╝{Fore.WHITE}  ║║ ║║║║║╔════╗║{Fore.YELLOW}║   ",
-    f"{Fore.YELLOW}║ {Fore.RED}    ╔╝╔╝  ╚════╝{Fore.WHITE} ╔╗                       ║║║║║║║╚════╝║{Fore.YELLOW}║  ",  
-    f"{Fore.YELLOW}║ {Fore.RED}   ╔╝╔╝{Fore.WHITE}          ║║        ╔╗        ╔╗    ║║║║║╚═════╗║{Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.RED}╔══╝╔╝{Fore.WHITE}      ║╚═══╝╚════════╝╚════════╝║ ╔═══╝║║║╔╗    ║║{Fore.YELLOW}║ ",              
-    f"{Fore.YELLOW}║ {Fore.RED}║   ║{Fore.WHITE}       ║                        ╔╝ ║    ║║║║╚════╝║{Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.RED}╚═══╝{Fore.WHITE}       ╚════╝╚════════╝╚════════╝  ╚════╝╚╝║      ║{Fore.YELLOW}║ ",      
-    f"{Fore.YELLOW}║ {Fore.WHITE}                     ╔═╗╔═╗     ╔═╗             ╚══════╝{Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.WHITE}                     ╚═╝╚═╝     ╚═╝ {Fore.YELLOW}║  ", 
-    f"{Fore.YELLOW}╚═════════════════════════════════════════════╝  ",                                     
+    f"{Fore.YELLOW}╔══════════════════════════════════════════════════════════════════════╗  ",    
+    f"{Fore.YELLOW}║ {Fore.RED}                                  ╔╗    ╔╗╔╗{Fore.YELLOW}║  ",
+    f"{Fore.YELLOW}║ {Fore.RED}                                   ║║   ║║║║{Fore.YELLOW}║ ",  
+    f"{Fore.YELLOW}║ {Fore.RED}                                    ║║  ║║║║{Fore.YELLOW}║ ",  
+    f"{Fore.YELLOW}║ {Fore.RED}               ╔════╗     ╔═════════╗║║ ║║║║{Fore.YELLOW}║ ", 
+    f"{Fore.YELLOW}║ {Fore.RED}               ║╔══╗║     ║╔═════╗ ╔╝ ║║║║║║{Fore.YELLOW}║ ",      
+    f"{Fore.YELLOW}║ {Fore.RED}            ╔══╝╚══╝╚═════╝╚═════╝ ╝╔═══╝║║║{Fore.WHITE}╔╗   ╔╗╔╗{Fore.YELLOW}║ ",    
+    f"{Fore.YELLOW}║ {Fore.RED}           ╔╝                    ╔╝ ║    ║║║{Fore.WHITE} ║║  ║║║║╔══════╗{Fore.YELLOW}║  ",
+    f"{Fore.YELLOW}║ {Fore.RED}          ╔╝╔══╗    ╔══════════╝    ╚════╝╚╝{Fore.WHITE}  ║║ ║║║║║╔════╗║{Fore.YELLOW}║   ",
+    f"{Fore.YELLOW}║ {Fore.RED}         ╔╝╔╝  ╚════╝{Fore.WHITE} ╔╗                       ║║║║║║║╚════╝║{Fore.YELLOW}║  ",  
+    f"{Fore.YELLOW}║ {Fore.RED}        ╔╝╔╝{Fore.WHITE}          ║║        ╔╗        ╔╗    ║║║║║╚═════╗║{Fore.YELLOW}║ ",
+    f"{Fore.YELLOW}║ {Fore.RED}     ╔══╝╔╝{Fore.WHITE}      ║╚═══╝╚════════╝╚════════╝║ ╔═══╝║║║╔╗    ║║{Fore.YELLOW}║ ",              
+    f"{Fore.YELLOW}║ {Fore.RED}     ║   ║{Fore.WHITE}       ║                        ╔╝ ║    ║║║║╚════╝║{Fore.YELLOW}║ ",
+    f"{Fore.YELLOW}║ {Fore.RED}     ╚═══╝{Fore.WHITE}       ╚════╝╚════════╝╚════════╝  ╚════╝╚╝║      ║{Fore.YELLOW}║ ",      
+    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╔═╗╔═╗     ╔═╗             ╚══════╝{Fore.YELLOW}║ ",
+    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╚═╝╚═╝     ╚═╝ {Fore.YELLOW}║  ", 
+    f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
     ]
 # Tampilkan header dengan warna
     for line in header_lines:
@@ -63,12 +63,12 @@ def display_header():
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 42}v.1.0")
     print(f"{Fore.BLUE}{Style.BRIGHT}{' ' * 15}Author By: KunFay'99")
-    print(f"{Fore.RED}║{'═' * 55}║")
+    print(f"{Fore.RED}║{'═' * 70}║")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
     print(f"{Fore.GREEN}║{' ' * 4}[?] {prompt_message.ljust(63)}║")
-    print(f"{Fore.WHITE}║{'═' * 55}║")
+    print(f"{Fore.WHITE}║{'═' * 70}║")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
@@ -83,7 +83,7 @@ def countdown(t):
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Ahmar-WalAbyad {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.CYAN}|{'═' * 74}|")
+            print(f"{Fore.CYAN}|{'═' * 70}|")
             return
 
 # Validasi URL dan Parsing Target
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     target_url = get_user_input("Please enter the target URL:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL invalid. Try again.{' ' * 37}|")
-        print(f"{Fore.CYAN}|{'═' * 55}|")
+        print(f"{Fore.CYAN}|{'═' * 70}|")
         target_url = get_user_input("Please enter the target URL :")
 
     try:
