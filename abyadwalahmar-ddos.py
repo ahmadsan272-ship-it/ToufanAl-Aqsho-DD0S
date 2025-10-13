@@ -39,7 +39,7 @@ def display_header():
     f"{Fore.RED}                               ║║   ║║║║ ",  
     f"{Fore.RED}                                ║║  ║║║║ ",  
     f"{Fore.RED}          ╔════╗     ╔═════════╗ ║║ ║║║║ ", 
-    f"{Fore.RED}          ║╔══╗║     ║╔═════╗╔╝  ║║║║║║",      
+    f"{Fore.RED}          ║╔══╗║     ║╔═════╗ ╔╝  ║║║║║║",      
     f"{Fore.RED}       ╔══╝╚══╝╚═════╝╚═════╝ ╝  ╔══╝║║║ ",    
     f"{Fore.RED}      ╔╝                    ╔╝   ║   ║║║",
     f"{Fore.RED}     ╔╝╔══╗    ╔══════════╝      ╚═══╝╚╝",
@@ -48,11 +48,22 @@ def display_header():
     f"{Fore.RED}╔══╝╔╝",  
     f"{Fore.RED}║   ║",
     f"{Fore.RED}╚═══╝",
-    f"{Fore.YELLOW} ",   
-     ]
+    f"{Fore.WHITE}                                            ╔╗     ╔╗╔╗╔══════╗  ", 
+    f"{Fore.WHITE}                                             ║║    ║║║║║ ╔═══╗║  ",
+    f"{Fore.WHITE}       ║║                                    ║║   ║║║║║ ╚═══╝║ ", 
+    f"{Fore.WHITE}        ║║                                    ║║  ║║║║║          ║  ",
+    f"{Fore.WHITE}         ║║                                    ║║ ║║║║╚═════╗║ ",
+    f"{Fore.WHITE}          ║║             ╔╗              ╔╗   ║║║║║║╔╗       ║║ ", 
+    f"{Fore.WHITE}  ║╚═══╝╚════════╝╚════════╝║ ╔══╝║║║║╚═════╝       ", 
+    f"{Fore.WHITE}  ║                                         ╔╝║     ║║║║        ║║   ", 
+    f"{Fore.WHITE}  ╚════╝╚════════╝╚════════╝  ╚═══╝╚╝╚═════╝ ", 
+    f"{Fore.WHITE}                ╔═╗╔═╗         ╔═╗  ",
+    f"{Fore.WHITE}                ╚═╝╚═╝         ╚═╝  ",
+    f"{Fore.WHITE} ",  
+    ]
 # Tampilkan header dengan warna
     for line in header_lines:
-        print(line)
+      print(line)
 
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
@@ -71,7 +82,7 @@ def countdown(t):
     while True:
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 0:
-            stdout.flush()
+            stdout.flush() 
             stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack status => {remaining_time:.2f} sec left {' ' * 26}|")
         else:
             stdout.flush()
