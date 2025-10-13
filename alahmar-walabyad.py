@@ -79,10 +79,11 @@ def countdown(t):
         if remaining_time > 0:
             stdout.flush() 
             stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
+            print(f"\r{Fore.GREEN} [*] Ahmar-WalAbyad {Fore.WHITE}" +str(url)+ ")
         else:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA} [*] Attack Done!{' ' * 53}|\n")
-            print(f"{Fore.CYAN}|{'═' * 55}|")
+            stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Ahmar-WalAbyad {Fore.CYAN} Attack has been completed|\n")
+            print(f"{Fore.CYAN}|{'═' * 74}|")
             return
 
 # Validasi URL dan Parsing Target
