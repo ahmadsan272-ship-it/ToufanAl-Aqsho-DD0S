@@ -63,9 +63,9 @@ def display_header():
       print(line)
 
     # Versi dan URL
-    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 42}v.1.0")
-    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 15}https://github.com/KUNF24/PASTBLACK-DD0S.git")
-    print(f"{Fore.CYAN}|{'=' * 55}|")
+    print(f"{Fore.WHITE}{Style.BRIGHT}{'═' * 42}v.1.0")
+    print(f"{Fore.BLUE}{Style.BRIGHT}{'═' * 15}https://github.com/KUNF24/PASTBLACK-DD0S.git")
+    print(f"{Fore.CYAN}|{'═' * 55}|")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
@@ -107,7 +107,7 @@ def launch_attack(target_url, duration):
     target = get_target(target_url)
 
     # Inisialisasi Serangan dan Waktu Serangan
-    log_attack_status(f"Meluncurkan serangan ke {target['host']} untuk {duration} detik...")
+    log_attack_status(f"Launching an attack on {target['host']} for {duration} second...")
     countdown(duration)
 
 if __name__ == "__main__":
