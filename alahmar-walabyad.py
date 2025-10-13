@@ -61,7 +61,7 @@ def display_header():
       print(line)
 
     # Versi dan URL
-    print(f"{Fore.WHITE}{Style.BRIGHT}{'' * 42}v.1.0")
+    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 42}v.1.0")
     print(f"{Fore.BLUE}{Style.BRIGHT}{'' * 15}Author By: KunFay'99")
     print(f"{Fore.RED}║{'═' * 55║")
 
@@ -78,10 +78,11 @@ def countdown(t):
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 0:
             stdout.flush() 
-            stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack status => {remaining_time:.2f} sec left {' ' * 26}|")
+            stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
+            print(f"{Fore.YELLOW}Target {Fore.GREEN}" +str(url)+ " run}")
         else:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack Done!{' ' * 53}|\n")
+            stdout.write(f"\r{Fore.MAGENTA} [*] Attack Done!{' ' * 53}|\n")
             print(f"{Fore.CYAN}|{'═' * 55}|")
             return
 
