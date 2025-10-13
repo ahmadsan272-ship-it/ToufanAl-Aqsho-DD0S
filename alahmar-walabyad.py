@@ -115,9 +115,9 @@ if __name__ == "__main__":
     display_header()
 
     # Prompt untuk input dari pengguna dengan tampilan yang rapi
-    target_url = get_user_input("Masukkan target URL:   ")
+    target_url = get_user_input("Please enter the target URL:   ")
     while not validators.url(target_url):
-        print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
+        print(f"{Fore.RED}|    [ERROR] URL invalid. Try again.{' ' * 37}|")
         print(f"{Fore.CYAN}|{'═' * 55}|")
         target_url = get_user_input("Please enter the target URL :")
 
