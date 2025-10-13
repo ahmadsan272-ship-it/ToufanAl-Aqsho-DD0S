@@ -50,7 +50,7 @@ def display_header():
     f"{Fore.RED}    ╔╝╔╝  ╚════╝{Fore.WHITE} ╔╗                                ║║ ║║║╚════╝║  ",  
     f"{Fore.RED}   ╔╝╔╝{Fore.WHITE}          ║║        ╔╗        ╔╗      ╔╗     ║║║║║║╔╗║║║╚═════╗║",
     f"{Fore.RED}╔══╝╔╝{Fore.WHITE}      ║╚═══╝╚════════╝╚════════╝║╔══╝║║║ ",              
-    f"{Fore.RED}║   ║{Fore.WHITE}       ║                        ╔╝ ║   ║║║║                ╚════╝║ ",
+    f"{Fore.RED}║   ║{Fore.WHITE}       ║                        ╔╝║    ║║║║                ╚════╝║ ",
     f"{Fore.RED}╚═══╝{Fore.WHITE}       ╚════╝╚════════╝╚════════╝  ╚═══╝╚╝     ",      
     f"{Fore.WHITE}                     ╔═╗╔═╗      ╔═╗   ╚══════╝ ",
     f"{Fore.WHITE}                     ╚═╝╚═╝      ╚═╝   ", 
