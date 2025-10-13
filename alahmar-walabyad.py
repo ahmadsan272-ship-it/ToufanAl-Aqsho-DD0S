@@ -78,7 +78,7 @@ def countdown(t):
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 0:
             stdout.flush() 
-            stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
+            stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED}" +ip+ {remaining_time:.2f} sec left {' ' * 26}")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.MAGENTA} [*] Attack Done!{' ' * 53}|\n")
