@@ -63,14 +63,14 @@ def display_header():
       print(line)
 
     # Versi dan URL
-    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
-    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://github.com/KUNF24/PASTBLACK-DD0S.git")
-    print(f"{Fore.CYAN}|{'=' * 74}|")
+    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 42}v.1.0")
+    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 15}https://github.com/KUNF24/PASTBLACK-DD0S.git")
+    print(f"{Fore.CYAN}|{'=' * 45}|")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
     print(f"{Fore.GREEN}|{' ' * 4}[?] {prompt_message.ljust(63)}|")
-    print(f"{Fore.GREEN}|{'=' * 74}|")
+    print(f"{Fore.GREEN}|{'=' * 45}|")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
