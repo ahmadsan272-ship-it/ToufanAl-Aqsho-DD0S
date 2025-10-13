@@ -56,7 +56,7 @@ def display_header():
     f"{Fore.WHITE}                    ╚═╝╚═╝      ╚═╝   ", 
     f"{Fore.WHITE}     ", 
     f"{Fore.WHITE}     ", 
-    f"{Fore.WHITE}                                         
+    f"{Fore.WHITE}      ",                                    
     ]
 # Tampilkan header dengan warna
     for line in header_lines:
