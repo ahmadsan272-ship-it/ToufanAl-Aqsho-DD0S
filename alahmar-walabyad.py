@@ -39,21 +39,21 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines = [ 
     f"{Fore.YELLOW}╔══════════════════════════════════════════════════════════════════════╗  ",    
-    f"{Fore.YELLOW}║ {Fore.RED}                                  ╔╗    ╔╗╔╗{Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║ {Fore.RED}                                   ║║   ║║║║{Fore.YELLOW}║ ",  
-    f"{Fore.YELLOW}║ {Fore.RED}                                    ║║  ║║║║{Fore.YELLOW}║ ",  
-    f"{Fore.YELLOW}║ {Fore.RED}               ╔════╗     ╔═════════╗║║ ║║║║{Fore.YELLOW}║ ", 
-    f"{Fore.YELLOW}║ {Fore.RED}               ║╔══╗║     ║╔═════╗ ╔╝ ║║║║║║{Fore.YELLOW}║ ",      
-    f"{Fore.YELLOW}║ {Fore.RED}            ╔══╝╚══╝╚═════╝╚═════╝ ╝╔═══╝║║║{Fore.WHITE}╔╗   ╔╗╔╗{Fore.YELLOW}║ ",    
-    f"{Fore.YELLOW}║ {Fore.RED}           ╔╝                    ╔╝ ║    ║║║{Fore.WHITE} ║║  ║║║║╔══════╗{Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║ {Fore.RED}          ╔╝╔══╗    ╔══════════╝    ╚════╝╚╝{Fore.WHITE}  ║║ ║║║║║╔════╗║{Fore.YELLOW}║   ",
-    f"{Fore.YELLOW}║ {Fore.RED}         ╔╝╔╝  ╚════╝{Fore.WHITE} ╔╗                       ║║║║║║║╚════╝║{Fore.YELLOW}║  ",  
-    f"{Fore.YELLOW}║ {Fore.RED}        ╔╝╔╝{Fore.WHITE}          ║║        ╔╗        ╔╗    ║║║║║╚═════╗║{Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.RED}     ╔══╝╔╝{Fore.WHITE}      ║╚═══╝╚════════╝╚════════╝║ ╔═══╝║║║╔╗    ║║{Fore.YELLOW}║ ",              
-    f"{Fore.YELLOW}║ {Fore.RED}     ║   ║{Fore.WHITE}       ║                        ╔╝ ║    ║║║║╚════╝║{Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.RED}     ╚═══╝{Fore.WHITE}       ╚════╝╚════════╝╚════════╝  ╚════╝╚╝║      ║{Fore.YELLOW}║ ",      
-    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╔═╗╔═╗     ╔═╗             ╚══════╝{Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╚═╝╚═╝     ╚═╝ {Fore.YELLOW}║  ", 
+    f"{Fore.YELLOW}║ {Fore.RED}                                  ╔╗    ╔╗╔╗                               {Fore.YELLOW}║  ",
+    f"{Fore.YELLOW}║ {Fore.RED}                                   ║║   ║║║║                               {Fore.YELLOW}║ ",  
+    f"{Fore.YELLOW}║ {Fore.RED}                                    ║║  ║║║║                               {Fore.YELLOW}║ ",  
+    f"{Fore.YELLOW}║ {Fore.RED}               ╔════╗     ╔═════════╗║║ ║║║║                          {Fore.YELLOW}║ ", 
+    f"{Fore.YELLOW}║ {Fore.RED}               ║╔══╗║     ║╔═════╗ ╔╝ ║║║║║║                           {Fore.YELLOW}║ ",      
+    f"{Fore.YELLOW}║ {Fore.RED}            ╔══╝╚══╝╚═════╝╚═════╝ ╝╔═══╝║║║{Fore.WHITE}╔╗   ╔╗╔╗      {Fore.YELLOW}║ ",    
+    f"{Fore.YELLOW}║ {Fore.RED}           ╔╝                    ╔╝ ║    ║║║{Fore.WHITE} ║║  ║║║║╔══════╗        {Fore.YELLOW}║  ",
+    f"{Fore.YELLOW}║ {Fore.RED}          ╔╝╔══╗    ╔══════════╝    ╚════╝╚╝{Fore.WHITE}  ║║ ║║║║║╔════╗║          {Fore.YELLOW}║   ",
+    f"{Fore.YELLOW}║ {Fore.RED}         ╔╝╔╝  ╚════╝{Fore.WHITE} ╔╗                       ║║║║║║║╚════╝║                   {Fore.YELLOW}║  ",  
+    f"{Fore.YELLOW}║ {Fore.RED}        ╔╝╔╝{Fore.WHITE}          ║║        ╔╗        ╔╗    ║║║║║╚═════╗║                     {Fore.YELLOW}║ ",
+    f"{Fore.YELLOW}║ {Fore.RED}     ╔══╝╔╝{Fore.WHITE}      ║╚═══╝╚════════╝╚════════╝║ ╔═══╝║║║╔╗    ║║       {Fore.YELLOW}║ ",              
+    f"{Fore.YELLOW}║ {Fore.RED}     ║   ║{Fore.WHITE}       ║                        ╔╝ ║    ║║║║╚════╝║                          {Fore.YELLOW}║ ",
+    f"{Fore.YELLOW}║ {Fore.RED}     ╚═══╝{Fore.WHITE}       ╚════╝╚════════╝╚════════╝  ╚════╝╚╝║      ║           {Fore.YELLOW}║ ",      
+    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╔═╗╔═╗     ╔═╗             ╚══════╝                             {Fore.YELLOW}║ ",
+    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╚═╝╚═╝     ╚═╝                                                       {Fore.YELLOW}║  ", 
     f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
     ]
 # Tampilkan header dengan warna
@@ -63,12 +63,12 @@ def display_header():
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 42}v.1.0")
     print(f"{Fore.BLUE}{Style.BRIGHT}{' ' * 15}Author By: KunFay'99")
-    print(f"{Fore.RED}║{'═' * 70}║")
+    print(f"{Fore.RED}╔{'═' * 70}╗")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}║{' ' * 4}[?] {prompt_message.ljust(63)}║")
-    print(f"{Fore.WHITE}║{'═' * 70}║")
+    print(f"{Fore.GREEN}║{' ' * 4}[?]{prompt_message.ljust(63)}║")
+    print(f"{Fore.WHITE}╚{'═' * 70}╝")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
