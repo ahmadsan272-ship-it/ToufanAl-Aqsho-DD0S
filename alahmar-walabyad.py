@@ -65,12 +65,12 @@ def display_header():
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 42}v.1.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 15}https://github.com/KUNF24/PASTBLACK-DD0S.git")
-    print(f"{Fore.CYAN}|{'=' * 45}|")
+    print(f"{Fore.CYAN}|{'=' * 55}|")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
     print(f"{Fore.GREEN}|{' ' * 4}[?] {prompt_message.ljust(63)}|")
-    print(f"{Fore.GREEN}|{'=' * 45}|")
+    print(f"{Fore.GREEN}|{'═' * 55}|")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
@@ -118,7 +118,7 @@ if __name__ == "__main__":
     target_url = get_user_input("Masukkan target URL:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
-        print(f"{Fore.CYAN}|{'=' * 74}|")
+        print(f"{Fore.CYAN}|{'═' * 55}|")
         target_url = get_user_input("Masukkan target URL:")
 
     try:
