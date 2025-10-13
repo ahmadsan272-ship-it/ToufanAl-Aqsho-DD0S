@@ -39,9 +39,9 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines = [ 
     f"{Fore.YELLOW}╔══════════════════════════════════════════════════════════════════════╗  ",    
-    f"{Fore.YELLOW}║ {Fore.RED}                                  ╔╗    ╔╗╔╗                 {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║ {Fore.RED}                                   ║║   ║║║║                 {Fore.YELLOW}║ ",  
-    f"{Fore.YELLOW}║ {Fore.RED}                                    ║║  ║║║║                 {Fore.YELLOW}║ ",  
+    f"{Fore.YELLOW}║ {Fore.RED}                                  ╔╗    ╔╗╔╗                     {Fore.YELLOW}║  ",
+    f"{Fore.YELLOW}║ {Fore.RED}                                   ║║   ║║║║                     {Fore.YELLOW}║ ",  
+    f"{Fore.YELLOW}║ {Fore.RED}                                    ║║  ║║║║                     {Fore.YELLOW}║ ",  
     f"{Fore.YELLOW}║ {Fore.RED}               ╔════╗     ╔═════════╗║║ ║║║║                          {Fore.YELLOW}║ ", 
     f"{Fore.YELLOW}║ {Fore.RED}               ║╔══╗║     ║╔═════╗ ╔╝ ║║║║║║                           {Fore.YELLOW}║ ",      
     f"{Fore.YELLOW}║ {Fore.RED}            ╔══╝╚══╝╚═════╝╚═════╝ ╝╔═══╝║║║{Fore.WHITE}╔╗   ╔╗╔╗                    {Fore.YELLOW}║ ",    
@@ -51,9 +51,9 @@ def display_header():
     f"{Fore.YELLOW}║ {Fore.RED}        ╔╝╔╝{Fore.WHITE}          ║║        ╔╗        ╔╗    ║║║║║╚═════╗║                     {Fore.YELLOW}║ ",
     f"{Fore.YELLOW}║ {Fore.RED}     ╔══╝╔╝{Fore.WHITE}      ║╚═══╝╚════════╝╚════════╝║ ╔═══╝║║║╔╗    ║║      {Fore.YELLOW}║ ",              
     f"{Fore.YELLOW}║ {Fore.RED}     ║   ║{Fore.WHITE}       ║                        ╔╝ ║    ║║║║╚════╝║                         {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.RED}     ╚═══╝{Fore.WHITE}       ╚════╝╚════════╝╚════════╝  ╚════╝╚╝║      ║         {Fore.YELLOW}║ ",      
-    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╔═╗╔═╗     ╔═╗             ╚══════╝    {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╚═╝╚═╝     ╚═╝                              {Fore.YELLOW}║  ", 
+    f"{Fore.YELLOW}║ {Fore.RED}     ╚═══╝{Fore.WHITE}       ╚════╝╚════════╝╚════════╝  ╚════╝╚╝║      ║            {Fore.YELLOW}║ ",      
+    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╔═╗╔═╗     ╔═╗             ╚══════╝   {Fore.YELLOW}║ ",
+    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╚═╝╚═╝     ╚═╝                          {Fore.YELLOW}║  ", 
     f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
     ]
 # Tampilkan header dengan warna
