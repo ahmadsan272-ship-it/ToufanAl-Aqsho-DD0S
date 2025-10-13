@@ -122,7 +122,7 @@ if __name__ == "__main__":
         target_url = get_user_input("Please enter the target URL :")
 
     try:
-        attack_duration = int(get_user_input("Masukkan durasi serangan (detik):"))
+        attack_duration = int(get_user_input("Enter attack duration (seconds):"))
     except ValueError:
         attack_duration = 60  # Default durasi
 
