@@ -84,7 +84,7 @@ def countdown(t):
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack Done!{' ' * 53}|\n")
-            print(f"{Fore.CYAN}|{'=' * 74}|")
+            print(f"{Fore.CYAN}|{'═' * 55}|")
             return
 
 # Validasi URL dan Parsing Target
@@ -99,7 +99,7 @@ def get_target(url):
         'scheme': urlparse(url).scheme,
         'port': urlparse(url).netloc.split(":")[1] if ":" in urlparse(url).netloc else ("443" if urlparse(url).scheme == "https" else "80")
     }
-    log_attack_status(f"Target diperoleh: {target['host']} ({target['scheme']}://{target['host']}:{target['port']}{target['uri']})")
+    log_attack_status(f"Target acquired: {target['host']} ({target['scheme']}://{target['host']}:{target['port']}{target['uri']})")
     return target
 
 # Fungsi Serangan Utama
