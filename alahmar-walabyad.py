@@ -119,7 +119,7 @@ if __name__ == "__main__":
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
         print(f"{Fore.CYAN}|{'═' * 55}|")
-        target_url = get_user_input("Masukkan target URL:")
+        target_url = get_user_input("Please enter the target URL :")
 
     try:
         attack_duration = int(get_user_input("Masukkan durasi serangan (detik):"))
