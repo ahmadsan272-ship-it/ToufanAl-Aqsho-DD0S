@@ -54,9 +54,7 @@ def display_header():
     f"{Fore.RED}╚═══╝{Fore.WHITE}       ╚════╝╚════════╝╚════════╝  ╚════╝╚╝║      ║",      
     f"{Fore.WHITE}                     ╔═╗╔═╗     ╔═╗             ╚══════╝ ",
     f"{Fore.WHITE}                     ╚═╝╚═╝     ╚═╝   ", 
-    f"{Fore.WHITE}     ", 
-    f"{Fore.WHITE}     ", 
-    f"{Fore.WHITE}      ",                                    
+    f"{Fore.WHITE}     ",                                     
     ]
 # Tampilkan header dengan warna
     for line in header_lines:
@@ -64,7 +62,7 @@ def display_header():
 
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{'═' * 42}v.1.0")
-    print(f"{Fore.BLUE}{Style.BRIGHT}{'═' * 15}https://github.com/KUNF24/PASTBLACK-DD0S.git")
+    print(f"{Fore.BLUE}{Style.BRIGHT}{'═' * 15}Author By: KunFay'99")
     print(f"{Fore.CYAN}|{'═' * 55}|")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
