@@ -53,13 +53,13 @@ def display_header():
     f"{Fore.YELLOW}║{Fore.RED} ║╚══════════╝╔╝{Fore.BLUE}╔══════════╗ ",
     f"{Fore.YELLOW}║{Fore.RED} ║            ║{Fore.BLUE}╔╝╔═══════╗╔╝   ",
     f"{Fore.YELLOW}║{Fore.RED} ╚════════════╝{Fore.BLUE}╔╝╚═══════╝╔╝  ",
-    f"{Fore.YELLOW}║{Fore.BLUE}                                 ╔╝              ╔╝          
-    f"{Fore.YELLOW}║{Fore.BLUE}                  ╔╗            ║╔════════╝            
-    f"{Fore.YELLOW}║{Fore.BLUE}                  ║║            ║║
-    f"{Fore.YELLOW}║{Fore.BLUE}                  ║╚═══════╝║               
-    f"{Fore.YELLOW}║{Fore.BLUE}                  ║               ║
-    f"{Fore.YELLOW}║{Fore.BLUE}                  ╚═════════╝
-    f"{Fore.YELLOW}║{Fore.BLUE}
+    f"{Fore.YELLOW}║{Fore.BLUE}                                 ╔╝              ╔╝  ",        
+    f"{Fore.YELLOW}║{Fore.BLUE}                  ╔╗            ║╔════════╝   ",         
+    f"{Fore.YELLOW}║{Fore.BLUE}                  ║║            ║║",
+    f"{Fore.YELLOW}║{Fore.BLUE}                  ║╚═══════╝║            ",   
+    f"{Fore.YELLOW}║{Fore.BLUE}                  ║               ║",
+    f"{Fore.YELLOW}║{Fore.BLUE}                  ╚═════════╝",
+    f"{Fore.YELLOW}║{Fore.BLUE}",
     f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
     ]
 # Tampilkan header dengan warna
