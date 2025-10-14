@@ -39,26 +39,14 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines = [ 
     f"{Fore.YELLOW}╔══════════════════════════════════════════════════════════════════════╗  ",    
-    f"{Fore.YELLOW}║ {Fore.RED}                                     ╔══╗
-    f"{Fore.YELLOW}║ {Fore.RED}                                     ║   ║
-    f"{Fore.YELLOW}║ {Fore.RED}                                     ║   ║                         {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║ {Fore.RED}                                     ║   ║                         {Fore.YELLOW}║ ",  
-    f"{Fore.YELLOW}║ {Fore.RED}                                     ║   ║                         {Fore.YELLOW}║ ",  
-    f"{Fore.YELLOW}║ {Fore.RED}
-    f"{Fore.YELLOW}║ {Fore.RED}               ╔════╗                 ╚═══════╗                        {Fore.YELLOW}║ ", 
-    f"{Fore.YELLOW}║ {Fore.RED}                                ╔═════                ╚╗
-    f"{Fore.YELLOW}║ {Fore.RED}               ║╔══╗║     ║╗       ╚╗    ║                           {Fore.YELLOW}║ ",      
-   
-    f"{Fore.YELLOW}║ {Fore.RED}            ╔══╝╚══╝╚═════╝     ╚════════╝{Fore.WHITE}╔╗   ╔╗╔╗        {Fore.YELLOW}║ ",    
-    f"{Fore.YELLOW}║ {Fore.RED}           ╔╝                    ╔╝ ║    ║║║{Fore.WHITE} ║║  ║║║║╔══════╗         {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║ {Fore.RED}          ╔╝╔══╗    ╔══════════╝    ╚════╝╚╝{Fore.WHITE}  ║║ ║║║║║╔════╗║       {Fore.YELLOW}║   ",
-    f"{Fore.YELLOW}║ {Fore.RED}         ╔╝╔╝  ╚════╝{Fore.WHITE} ╔╗                       ║║║║║║║╚════╝║       {Fore.YELLOW}║  ",  
-    f"{Fore.YELLOW}║ {Fore.RED}        ╔╝╔╝{Fore.WHITE}          ║║        ╔╗        ╔╗    ║║║║║╚═════╗║        {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.RED}     ╔══╝╔╝{Fore.WHITE}      ║╚═══╝╚════════╝╚════════╝║ ╔═══╝║║║╔╗    ║║   {Fore.YELLOW}║ ",              
-    f"{Fore.YELLOW}║ {Fore.RED}     ║   ║{Fore.WHITE}       ║                        ╔╝ ║    ║║║║╚════╝║           {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.RED}     ╚═══╝{Fore.WHITE}       ╚════╝╚════════╝╚════════╝  ╚════╝╚╝║      ║       {Fore.YELLOW}║ ",      
-    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╔═╗╔═╗     ╔═╗             ╚══════╝   {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║ {Fore.WHITE}                          ╚═╝╚═╝     ╚═╝                          {Fore.YELLOW}║  ", 
+    f"{Fore.YELLOW}║{Fore.RED}                                     ╔══╗
+    f"{Fore.YELLOW}║{Fore.RED}                                     ║   ║
+    f"{Fore.YELLOW}║{Fore.RED}
+    f"{Fore.YELLOW}║{Fore.RED}
+    f"{Fore.YELLOW}║{Fore.RED}
+    f"{Fore.YELLOW}║{Fore.RED}
+    f"{Fore.YELLOW}║{Fore.RED}
+    f"{Fore.YELLOW}║{Fore.RED}
     f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
     ]
 # Tampilkan header dengan warna
@@ -78,7 +66,8 @@ def get_user_input(prompt_message):
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
 def countdown(t):
-    until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
+    until = datetime.date
+     time.now() + datetime.timedelta(seconds=int(t))
     while True:
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 0:
