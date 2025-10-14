@@ -39,14 +39,17 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines = [ 
     f"{Fore.YELLOW}╔══════════════════════════════════════════════════════════════════════╗  ",    
-    f"{Fore.YELLOW}║{Fore.RED}                                     ╔══╗
-    f"{Fore.YELLOW}║{Fore.RED}                                     ║   ║
-    f"{Fore.YELLOW}║{Fore.RED}
-    f"{Fore.YELLOW}║{Fore.RED}
-    f"{Fore.YELLOW}║{Fore.RED}
-    f"{Fore.YELLOW}║{Fore.RED}
-    f"{Fore.YELLOW}║{Fore.RED}
-    f"{Fore.YELLOW}║{Fore.RED}
+    f"{Fore.YELLOW}║{Fore.RED}                                                     ╔╗",
+    f"{Fore.YELLOW}║{Fore.RED}                                                     ║║",                  
+    f"{Fore.YELLOW}║{Fore.RED}                                                     ║║",
+    f"{Fore.YELLOW}║{Fore.RED}                              ╔════════╗      ║║╔════════╗",
+    f"{Fore.YELLOW}║{Fore.RED}                              ║╔══════╗║      ║╚╝╔══════╗║",
+    f"{Fore.YELLOW}║{Fore.RED}  ╚═══════════════ ║╚══════╝╚════╝╚════════╝║",
+    f"{Fore.YELLOW}║{Fore.RED}                              ╚╗                                    ╔╝  ",
+    f"{Fore.YELLOW}║{Fore.RED}   ╚════════════════ ╚═════╗╔════╚════════╝",
+    f"{Fore.YELLOW}║{Fore.RED}                           ╔════════╝║",
+    f"{Fore.YELLOW}║{Fore.RED}                           ║             ╔╝",
+    f"{Fore.YELLOW}║{Fore.RED}                           ╚════════╝",
     f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
     ]
 # Tampilkan header dengan warna
