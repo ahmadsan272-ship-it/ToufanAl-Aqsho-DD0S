@@ -59,8 +59,8 @@ def display_header():
     f"{Fore.YELLOW}║{Fore.BLUE}        ║║          ║║        ║╚══════════════════╝║╔══════╝║║║       {Fore.YELLOW}║    ",
     f"{Fore.YELLOW}║{Fore.BLUE}        ║╚══════════╝║        ║                   ╔╝║       ║║║       {Fore.YELLOW}║  ",   
     f"{Fore.YELLOW}║{Fore.BLUE}        ║            ║         ╚══════════════════╝ ╚═══════╝╚╝       {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║{Fore.BLUE}        ╚════════════╝                                               {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║                                                                       {Fore.YELLOW}║ ",
+    f"{Fore.YELLOW}║{Fore.BLUE}        ╚════════════╝                                                {Fore.YELLOW}║",
+    f"{Fore.YELLOW}║                                                                      {Fore.YELLOW}║",
     f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
     ]
 # Tampilkan header dengan warna
@@ -86,12 +86,12 @@ def countdown(t):
         if remaining_time > 0:
             stdout.flush() 
             stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
-            print(f"\r{Fore.YELLOW} [*] {Fore.BLUE}T0UFAN AL-AQSHA {Fore.WHITE}=> {Fore.RED}Attack status {Fore.YELLOW}=> {Fore.MAGENTA} {remaining_time:.2f} sec left ")
-            print(f"\r{Fore.WHITE} [*] {Fore.GREEN}T0UFAN AL-AQSHA {Fore.RED}=> {Fore.WHITE}Status attack {Fore.GREEN}=> {Fore.CYAN} {remaining_time:.2f} sec left ")
+            print(f"\r{Fore.YELLOW} [*] {Fore.BLUE}T0UFAN AL-AQSHA {Fore.WHITE}=>  {Fore.RED}Attack status {Fore.YELLOW}=> {Fore.MAGENTA} {remaining_time:.2f} sec left ")
+            print(f"\r{Fore.WHITE} [*] {Fore.GREEN}T0UFAN AL-AQSHA {Fore.RED}=>  {Fore.WHITE}Status attack {Fore.GREEN}=> {Fore.CYAN} {remaining_time:.2f} sec left ")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Ahmar-WalAbyad {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.CYAN}|{'═' * 70}|")
+            print(f"{Fore.CYAN}<{'═' * 50}>")
             return
 
 # Validasi URL dan Parsing Target
@@ -125,7 +125,7 @@ if __name__ == "__main__":
     target_url = get_user_input("Please enter the target URL:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL invalid. Try again.{' ' * 37}|")
-        print(f"{Fore.CYAN}<{'═' * 50}>")
+        print(f"{Fore.CYAN}╚{'═' * 70}╝")
         target_url = get_user_input("Please enter the target URL :")
 
     try:
