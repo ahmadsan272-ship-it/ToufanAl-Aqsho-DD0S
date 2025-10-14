@@ -42,17 +42,17 @@ def display_header():
     f"{Fore.YELLOW}║{Fore.RED}                                           ╔╗",
     f"{Fore.YELLOW}║{Fore.RED}                                           ║║",                  
     f"{Fore.YELLOW}║{Fore.RED}                                           ║║",
-    f"{Fore.YELLOW}║{Fore.RED}                 ╔════════╗ ╔════════╗    ║║╔════════╗",
-    f"{Fore.YELLOW}║{Fore.RED}                 ║╔══════╗║ ║╔══════╗║    ║╚╝╔══════╗║",
-    f"{Fore.YELLOW}║{Fore.RED}                 ║╚══════╝║ ║╚══════╝╚════╝╚════════╝║",
-    f"{Fore.YELLOW}║{Fore.RED}                 ║        ║ ╚╗                      ╔╝  ",
-    f"{Fore.YELLOW}║{Fore.RED}                 ╚═══════╗║   ╚══════╗╔════╚════════╝",
-    f"{Fore.YELLOW}║{Fore.RED}╔╗           ╔═══════════╝║╔════════╝║",
-    f"{Fore.YELLOW}║{Fore.RED}║║           ║          ╔╝ ║        ╔╝",
-    f"{Fore.YELLOW}║{Fore.RED}║║          ╔╝╔══════════╝   ╚════════╝",
-    f"{Fore.YELLOW}║{Fore.RED}║╚══════════╝╔╝",
-    f"{Fore.YELLOW}║{Fore.RED}║            ║",
-    f"{Fore.YELLOW}║{Fore.RED}╚════════════╝  ",
+    f"{Fore.YELLOW}║{Fore.RED}                  ╔════════╗ ╔════════╗    ║║╔════════╗",
+    f"{Fore.YELLOW}║{Fore.RED}                  ║╔══════╗║ ║╔══════╗║    ║╚╝╔══════╗║",
+    f"{Fore.YELLOW}║{Fore.RED}                  ║╚══════╝║ ║╚══════╝╚════╝╚════════╝║",
+    f"{Fore.YELLOW}║{Fore.RED}                  ║        ║ ╚╗                      ╔╝  ",
+    f"{Fore.YELLOW}║{Fore.RED}                  ╚═══════╗║   ╚══════╗╔════╚════════╝",
+    f"{Fore.YELLOW}║{Fore.RED} ╔╗           ╔═══════════╝║╔════════╝║",
+    f"{Fore.YELLOW}║{Fore.RED} ║║           ║           ╔╝ ║       ╔╝",
+    f"{Fore.YELLOW}║{Fore.RED} ║║          ╔╝╔══════════╝ ╚════════╝",
+    f"{Fore.YELLOW}║{Fore.RED} ║╚══════════╝╔╝",
+    f"{Fore.YELLOW}║{Fore.RED} ║            ║",
+    f"{Fore.YELLOW}║{Fore.RED} ╚════════════╝  ",
     f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
     ]
 # Tampilkan header dengan warna
@@ -79,7 +79,8 @@ def countdown(t):
         if remaining_time > 0:
             stdout.flush() 
             stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
-            print(f"\r{Fore.YELLOW} [*] {Fore.GREEN}Ahmar-WalAbyad  {Fore.WHITE}Attack status {Fore.RED} {remaining_time:.2f} sec left ")
+            print(f"\r{Fore.YELLOW} [*] {Fore.BLUE}T0UFAN AL-AQSHA {Fore.RED}ATTACK STATUS {Fore.MAGENTA} {remaining_time:.2f} sec left ")
+            print(f"\r{Fore.WHITE} [*] {Fore.GREEN}T0UFAN AL-AQSHA {Fore.WHITE}ATTACK STATUS {Fore.CYAN} {remaining_time:.2f} sec left ")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Ahmar-WalAbyad {Fore.CYAN} Attack has been completed|\n")
