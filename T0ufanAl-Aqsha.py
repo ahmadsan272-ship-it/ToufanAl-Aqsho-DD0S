@@ -73,8 +73,7 @@ def get_user_input(prompt_message):
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
 def countdown(t):
-    until = datetime.date
-    time.now() + datetime.timedelta(seconds=int(t))
+    until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
     while True:
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 0:
