@@ -1,4 +1,4 @@
 requests
-clorama
+colorama
 validators
 asycio
