@@ -50,9 +50,9 @@ def display_header():
     f"{Fore.YELLOW}║{Fore.RED}             ╔╗                   ╔═══════════╝║╔════════╝║",
     f"{Fore.YELLOW}║{Fore.RED}             ║║                   ║                  ╔╝ ║              ╔╝",
     f"{Fore.YELLOW}║{Fore.RED}             ║║                 ╔╝╔══════════╝   ╚════════╝",
-    f"{Fore.YELLOW}║{Fore.RED}             ║╚══════════╝╔╝
-    f"{Fore.YELLOW}║{Fore.RED}             ║                     ║
-    f"{Fore.YELLOW}║{Fore.RED}             ╚════════════╝  
+    f"{Fore.YELLOW}║{Fore.RED}             ║╚══════════╝╔╝",
+    f"{Fore.YELLOW}║{Fore.RED}             ║                     ║",
+    f"{Fore.YELLOW}║{Fore.RED}             ╚════════════╝  ",
     f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
     ]
 # Tampilkan header dengan warna
