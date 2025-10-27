@@ -69,7 +69,7 @@ def display_header():
 
     # Versi dan URL
     print(f"\033[32m╔{'═' * 70}╗")
-    print(f"\033[32m║\033[0m \033[41m    T 0 U F A N  AL  A Q S H A {' ' * 61}\033[0m \033[32m║")
+    print(f"\033[32m║\033[0m \033[41m          T 0 U F A N  AL  A Q S H A {' ' * 30}\033[0m \033[32m║")
     print(f"\033[32m║\033[0m \033[41m  Author By: KunFay'99{' ' * 46}\033[0m \033[32m║")
     print(f"\033[32m╚{'═' * 70}╝")
 
