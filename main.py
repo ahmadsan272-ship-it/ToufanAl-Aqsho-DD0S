@@ -70,7 +70,7 @@ def display_header():
     # Versi dan URL
     print(f"\033[32m╔{'═' * 70}╗")
     print(f"\033[32m║\033[0m \033[41m  v.1.0{' ' * 61}\033[0m \033[32m║")
-    print(f"\033[32m║\033[0m \033[41m  Author By: KunFay'99{' ' * 30}\033[0m \033[32m║")
+    print(f"\033[32m║\033[0m \033[41m  Author By: KunFay'99{' ' * 45}\033[0m \033[32m║")
     print(f"\033[32m╚{'═' * 70}╝")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
