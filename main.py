@@ -68,10 +68,10 @@ def display_header():
       print(line)
 
     # Versi dan URL
-    print(f"\033[91m╔{'═' * 70}╗")
-    print(f"\033[91m║\033[0m  \033[41m  v.1.0{' ' * 58}\033[0m  \033[91m║")
-    print(f"{Fore.BLUE}{Style.BRIGHT}Author By: KunFay'99{' ' * 15}")
-    print(f"{Fore.RED}╔{'═' * 70}╗")
+    print(f"\033[32m╔{'═' * 70}╗")
+    print(f"\033[32m║\033[0m  \033[41m  v.1.0{' ' * 59}\033[0m  \033[32m║")
+    print(f"\033[32m║\033[0m  \033[41m  Author By: KunFay'99{' ' * 13}\033[0m  \033[32m║")
+    print(f"\033[33m╚{'═' * 70}╝")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
