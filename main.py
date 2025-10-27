@@ -68,8 +68,8 @@ def display_header():
       print(line)
 
     # Versi dan URL
-    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 42}v.1.0")
-    print(f"{Fore.BLUE}{Style.BRIGHT}{' ' * 15}Author By: KunFay'99")
+    print(f"{Fore.WHITE}{Style.BRIGHT}v.1.0{' ' * 42}")
+    print(f"{Fore.BLUE}{Style.BRIGHT}Author By: KunFay'99{' ' * 15}")
     print(f"{Fore.RED}╔{'═' * 70}╗")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
