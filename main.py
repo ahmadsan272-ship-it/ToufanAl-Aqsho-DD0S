@@ -68,7 +68,7 @@ def display_header():
       print(line)
 
     # Versi dan URL
-    print(f"\033[91m║\033[0m  \033[41m  v.1.0{' ' * 60}\033[91m ║\033[0m")
+    print(f"\033[91m║\033[0m  \033[41m  v.1.0{' ' * 60}\033[91m \033[0m║")
     print(f"{Fore.BLUE}{Style.BRIGHT}Author By: KunFay'99{' ' * 15}")
     print(f"{Fore.RED}╔{'═' * 70}╗")
 
