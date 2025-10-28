@@ -68,16 +68,16 @@ def display_header():
       print(line)
 
     # Versi dan URL
-    print(f"\033[32m╔{'═' * 70}╗")
-    print(f"\033[32m║\033[0m \033[41m{' ' * 20} T 0 U F A N  AL  A Q S H A {' ' * 20}\033[0m \033[32m║")
-    print(f"\033[32m║\033[0m \033[41m  Author By: KunFay'99{' ' * 46}\033[0m \033[32m║")
-    print(f"\033[32m╚{'═' * 70}╝") 
+    print(f"\033[37m╔{'═' * 70}╗")
+    print(f"\033[37m║\033[0m \033[41m{' ' * 20} T 0 U F A N  AL  A Q S H A {' ' * 20}\033[0m \033[37m║")
+    print(f"\033[37m║\033[0m \033[41m  Author By: KunFay'99{' ' * 46}\033[0m \033[37m║")
+    print(f"\033[37m╚{'═' * 70}╝") 
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.YELLOW} {prompt_message.ljust(63)}")
-    print(f"{Fore.GREEN}┏━━KunFayz━━━⬣")
-    return input(f"{Fore.GREEN}┗> {Fore.LIGHTBLUE_EX}").strip()
+    print(f"{Fore.LIGHTGREEN_EX} {prompt_message.ljust(63)}")
+    print(f"{Fore.WHITE}┏━━KunFayz━━━⬣")
+    return input(f"{Fore.WHITE}┗> {Fore.LIGHTBLUE_EX}").strip()
     
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
@@ -88,12 +88,12 @@ def countdown(t):
         if remaining_time > 0:
             stdout.flush() 
             stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
-            print(f"\r{Fore.YELLOW} [*] {Fore.BLUE}T0UFAN AL-AQSHA {Fore.WHITE}=>  {Fore.RED}Attack status {Fore.YELLOW}=> {Fore.MAGENTA} {remaining_time:.2f} sec left ")
+            print(f"\r{Fore.YELLOW} [*] \033[103m T0UFAN AL-AQSHA \033[0m {Fore.WHITE}=>  {Fore.RED}Attack status {Fore.YELLOW}=> {Fore.MAGENTA} {remaining_time:.2f} sec left ")
             print(f"\r{Fore.WHITE} [*] {Fore.GREEN}T0UFAN AL-AQSHA {Fore.RED}=>  {Fore.WHITE}Status attack {Fore.GREEN}=> {Fore.CYAN} {remaining_time:.2f} sec left ")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Ahmar-WalAbyad {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.CYAN}<{'••' * 10}>")
+            print(f"{Fore.CYAN}<{'••' * 50}>")
             return
 
 # Validasi URL dan Parsing Target
