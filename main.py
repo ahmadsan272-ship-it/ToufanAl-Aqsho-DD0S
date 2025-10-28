@@ -75,7 +75,7 @@ def display_header():
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN} {prompt_message.ljust(63)}")
+    print(f"{Fore.YELLOW} {prompt_message.ljust(63)}")
     print(f"{Fore.GREEN}┏━━KunFayz━━━⬣")
     return input(f"{Fore.GREEN}┗> {Fore.LIGHTBLUE_EX}").strip()
     
@@ -93,7 +93,7 @@ def countdown(t):
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Ahmar-WalAbyad {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.CYAN}<{'═' * 50}>")
+            print(f"{Fore.CYAN}<{'••' * 10}>")
             return
 
 # Validasi URL dan Parsing Target
