@@ -89,11 +89,11 @@ def countdown(t):
             stdout.flush() 
             stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
             print(f"\r{Fore.YELLOW} [*] \033[104m \033[37mT0UFAN AL-AQSHA \033[0m {Fore.WHITE}=>  {Fore.RED}Attack status {Fore.YELLOW}=> {Fore.MAGENTA} {remaining_time:.2f} sec left ")
-            print(f"\r{Fore.WHITE} [*] {Fore.GREEN} T0UFAN AL-AQSHA {Fore.RED}=>  {Fore.WHITE}Status attack {Fore.GREEN}=> {Fore.CYAN} {remaining_time:.2f} sec left ")
+            print(f"\r{Fore.WHITE} [*] {Fore.GREEN} T0UFAN AL-AQSHA {Fore.RED} =>  {Fore.WHITE}Status attack {Fore.GREEN}=> {Fore.CYAN} {remaining_time:.2f} sec left ")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Ahmar-WalAbyad {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.CYAN}<{'••' * 40}>")
+            print(f"{Fore.CYAN}<{'••' * 30}>")
             return
 
 # Validasi URL dan Parsing Target
