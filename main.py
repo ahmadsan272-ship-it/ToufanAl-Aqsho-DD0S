@@ -71,19 +71,13 @@ def display_header():
     print(f"\033[32m╔{'═' * 70}╗")
     print(f"\033[32m║\033[0m \033[41m{' ' * 20} T 0 U F A N  AL  A Q S H A {' ' * 20}\033[0m \033[32m║")
     print(f"\033[32m║\033[0m \033[41m  Author By: KunFay'99{' ' * 46}\033[0m \033[32m║")
-    print(f"\033[32m╚{'═' * 70}╝")
+    print(f"\033[32m╚{'═' * 70}╝") 
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.LIGHTYELLOW_EX}┏━━KunFayz━━━⬣")
-    print(f"{Fore.LIGHTYELLOW_EX}┗>  {Fore.LIGHTBLUE_EX}")
-    return input(f"{Fore.YELLOW}{' ' * 4}> ").strip() 
-
-# Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
-def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}|{' ' * 4}[?] {prompt_message.ljust(63)}|")
-    print(f"{Fore.GREEN}|{'=' * 74}|")
-    return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
+    print(f"{Fore.GREEN}┏━━KunFayz━━━⬣ {prompt_message.ljust(63)}")
+    print(f"{Fore.GREEN}┗  {Fore.LIGHTBLUE_EX}")
+    return input(f"{Fore.LIGHTBLUE_EX}> ").strip()
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
 def countdown(t):
