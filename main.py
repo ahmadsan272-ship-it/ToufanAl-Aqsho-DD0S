@@ -127,7 +127,7 @@ if __name__ == "__main__":
     target_url = get_user_input("Please enter the target URL:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL invalid. Try again.{' ' * 37}|")
-        print(f"{Fore.CYAN}╚{'═' * 70}╝")
+        print(f"{Fore.CYAN}{'••' * 10}")
         target_url = get_user_input("Please enter the target URL :")
 
     try:
