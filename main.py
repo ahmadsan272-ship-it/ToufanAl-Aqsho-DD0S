@@ -75,8 +75,8 @@ def display_header():
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}")
-    print(f"{Fore.WHITE}")
+    print(f"{Fore.LIGHTYELLOW_EX}┏━━KunFayz━━━⬣")
+    print(f"{Fore.LIGHTYELLOW_EX}┗>  {Fore.LIGHTBLUE_EX}")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()       
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
