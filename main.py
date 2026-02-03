@@ -63,9 +63,9 @@ f"{Fore.YELLOW}▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒�
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}|{' ' * 4}[?] {prompt_message.ljust(63)}|")
-    print(f"{Fore.GREEN}|{'=' * 74}|")
-    return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
+    print(f"{Fore.GREEN}  ╭─jejak(sunyi)─⬣")
+    print(f"{Fore.GREEN}╰─> [?] {prompt_message.ljust(63)}")
+    return input(f"{Fore.YELLOW}╰─>{' ' * 4}> ").strip()
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
 def countdown(t):
@@ -75,7 +75,7 @@ def countdown(t):
         if remaining_time > 1:
             time.sleep(1),
             stdout.flush()
-            stdout.write(f"\r{Fore.BLUE}[{Fore.RED}Fit'84{Fore.BLUE}] {Fore.YELLOW}TargetAquired {target_url} {Fore.GREEN}{remaining_time:.2f}\n")
+            stdout.write(f"\r{Fore.BLUE}[{Fore.RED}Fit'84{Fore.BLUE}]  TargetAquired {target_url} {Fore.GREEN}{remaining_time:.2f}\n")
             stdout.write(f"\r{Fore.YELLOW}[{Fore.CYAN}Fit'84{Fore.YELLOW}] {Fore.GREEN}TargetAquired {Fore.WHITE} {target_url} {Fore.MAGENTA} {t}\n")
         else:
             stdout.flush()
@@ -86,8 +86,8 @@ def countdown(t):
 # Validasi URL dan Parsing Target
 def get_target(url):
     if not validators.url(url):
-        log_attack_status(f"URL tidak valid: {url}", level='error')
-        raise ValueError(f"URL tidak valid: {url}")
+        log_attack_status(f"URL not valid: {url}", level='error')
+        raise ValueError(f"URL not valid: {url}")
 
     target = {
         'uri': urlparse(url).path or "/",
@@ -113,7 +113,7 @@ if __name__ == "__main__":
     # Prompt untuk input dari pengguna dengan tampilan yang rapi
     target_url = get_user_input("Masukkan target URL:   ")
     while not validators.url(target_url):
-        print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
+        print(f"{Fore.RED} [ERROR] URL tidak valid. Coba lagi.{' ' * 37}")
         print(f"{Fore.CYAN}|{'=' * 74}|")
         target_url = get_user_input("Masukkan target URL:")
 
