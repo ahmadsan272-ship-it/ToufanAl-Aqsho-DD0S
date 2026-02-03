@@ -55,15 +55,15 @@ f"{Fore.YELLOW}▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒�
       print(line)
 
     # Versi dan URL
-    print(f"\033[37m╔{'═' * 70}╗")
-    print(f"\033[37m║\033[0m \033[41m{' ' * 20} T 0 U F A N  AL  A Q S H A {' ' * 20}\033[0m \033[37m║")
-    print(f"\033[37m║\033[0m \033[41m  Author By: KunFay'99{' ' * 46}\033[0m \033[37m║")
-    print(f"\033[37m╚{'═' * 70}╝") 
+    print(f"\033[37m╔{'═' * 66}╗")
+    print(f"\033[37m║\033[0m \033[41m{' ' * 10}Birruh Biddam nafdika yaa Aqsha {' ' * 20}\033[0m \033[27m║")
+    print(f"\033[37m║\033[0m \033[41m  Author By: KunFay'99{' ' * 46}\033[0m \033[30m║")
+    print(f"\033[37m╚{'═' * 66}╝") 
 
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}  ╭─jejak(sunyi)─⬣")
+    print(f"{Fore.GREEN}╭─jejak(sunyi)─⬣")
     print(f"{Fore.GREEN}╰─> [?] {prompt_message.ljust(63)}")
     return input(f"{Fore.YELLOW}╰─> ").strip()
 
