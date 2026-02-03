@@ -122,4 +122,4 @@ if __name__ == "__main__":
         attack_duration = 60  # Default durasi
 
     # Luncurkan serangan
-    launch_attack(target_url, attack_duration
+    launch_attack(target_url, attack_duration)
