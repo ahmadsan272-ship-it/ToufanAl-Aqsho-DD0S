@@ -35,34 +35,11 @@ def log_attack_status(message, level='info', print_to_terminal=True):
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
 
-# Fungsi untuk Menampilkan Header BASE dengan Warna
+# Fungsi untuk Menampilkan Header JS dengan Warna
 def display_header():
     header_lines = [ 
-    f"{Fore.YELLOW}╔══════════════════════════════════════════════════════════════════════╗  ",    
-    f"{Fore.YELLOW}║{Fore.RED}                                                 ╔╗                   {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║{Fore.RED}                                                 ║║                   {Fore.YELLOW}║ ",                                          
-    f"{Fore.YELLOW}║{Fore.RED}                           ╔═╗                   ║║                   {Fore.YELLOW}║ ",                  
-    f"{Fore.YELLOW}║{Fore.RED}                           ╚═╝                   ║║                   {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║{Fore.RED}                        ╔════════╗ ╔════════╗    ║║╔════════╗         {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║{Fore.RED}                        ║╔══════╗║ ║╔══════╗║    ║╚╝╔══════╗║         {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║{Fore.RED}                        ║╚══════╝║ ║╚══════╝╚════╝╚════════╝║         {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║{Fore.RED}            ╔═╗         ║        ║ ╚╗                      ╔╝         {Fore.YELLOW}║",
-    f"{Fore.YELLOW}║{Fore.RED}            ╚═╝         ╚═══════╗║  ╚══════╗╔════╚═════════╝          {Fore.YELLOW}║ ",
-    f"{Fore.YELLOW}║{Fore.RED}       ╔╗           ╔═══════════╝║╔════════╝║{Fore.BLUE}      ╔╗      ╔╗╔╗       {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║{Fore.RED}       ║║           ║           ╔╝║        ╔╝{Fore.BLUE}╔═╗╔═╗ ║║     ║║║║       {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║{Fore.RED}       ║║          ╔╝╔══════════╝ ╚════════╝{Fore.BLUE} ╚═╝╚═╝  ║║    ║║║║       {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║{Fore.RED}       ║╚══════════╝╔╝{Fore.BLUE} ╔══════════╗         ╔══════╗  ║║   ║║║║       {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║{Fore.RED}       ║            ║{Fore.BLUE} ╔╝╔═══════╗╔╝        ╔╝╔════╗║   ║║  ║║║║       {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║{Fore.RED}       ╚════════════╝{Fore.BLUE}╔╝════════╝╔╝         ║ ╚════╝║    ║║ ║║║║       {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║{Fore.BLUE}                    ╔╝         ╔╝          ║       ║    ║║ ║║║║       {Fore.YELLOW}║  ",        
-    f"{Fore.YELLOW}║{Fore.BLUE}        ╔╗          ║╔═════════╝           ╚══════╗║    ║║ ║║║║       {Fore.YELLOW}║  ",         
-    f"{Fore.YELLOW}║{Fore.BLUE}        ║║          ║║        ║╚══════════════════╝║╔══════╝║║║       {Fore.YELLOW}║    ",
-    f"{Fore.YELLOW}║{Fore.BLUE}        ║╚══════════╝║        ║                   ╔╝║       ║║║       {Fore.YELLOW}║  ",   
-    f"{Fore.YELLOW}║{Fore.BLUE}        ║            ║         ╚══════════════════╝ ╚═══════╝╚╝       {Fore.YELLOW}║  ",
-    f"{Fore.YELLOW}║{Fore.BLUE}        ╚════════════╝                                                {Fore.YELLOW}║",
-    f"{Fore.YELLOW}║                                                                      {Fore.YELLOW}║",
-    f"{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════╝  ",                                     
-    ]
+    f"{Fore.YELLOW}
+    
 # Tampilkan header dengan warna
     for line in header_lines:
       print(line)
