@@ -63,7 +63,7 @@ f"{Fore.YELLOW}▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒�
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}╭─jejak(sunyi)─⬣")
+    print(f"{Fore.GREEN}╭───jejak(sunyi)──⬣")
     print(f"{Fore.GREEN}╰─> [?] {prompt_message.ljust(63)}")
     return input(f"{Fore.YELLOW}╰─> ").strip()
 
@@ -75,8 +75,8 @@ def countdown(t):
         if remaining_time > 1:
             time.sleep(1),
             stdout.flush()
-            stdout.write(f"\r{Fore.BLUE}[{Fore.RED}Fit'84{Fore.BLUE}]  TargetAquired {target_url} {Fore.GREEN}{remaining_time:.2f}\n")
-            stdout.write(f"\r{Fore.YELLOW}[{Fore.CYAN}Fit'84{Fore.YELLOW}] {Fore.GREEN}TargetAquired {Fore.WHITE} {target_url} {Fore.MAGENTA} {t}\n")
+            stdout.write(f"\r{Fore.BLUE}[{Fore.YELLOW}Fit'84{Fore.BLUE}]TargetAquired {target_url} {Fore.GREEN}{remaining_time:.2f}\n")
+            stdout.write(f"\r{Fore.YELLOW}[{Fore.CYAN}Fit'84{Fore.YELLOW}] {Fore.GREEN}TargetAquired {Fore.WHITE} {target_url} {Fore.MAGENTA} {warning}\n")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.MAGENTA}[{Fore.YELLOW}Fit'84{Fore.MAGENTA}] {Fore.BLUE} Attack hasben complite\n")
