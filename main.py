@@ -74,7 +74,7 @@ def countdown(t):
         if remaining_time > 0:
             stdout.flush() 
             stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
-            print(f"\r{Fore.YELLOW}[\033[104m \033[37mFit'84 \033[0m{Fore.YELLOW}] {Fore.WHITE}=>  {Fore.RED}Attack status {Fore.MAGENTA}{url} {Fore.YELLOW} {remaining:.2f} {Fore.LIGHTBLUE_EX}sec left ")
+            print(f"\r{Fore.YELLOW}[\033[104m \033[37mFit'84 \033[0m{Fore.YELLOW}] {Fore.WHITE}=>  {Fore.RED}Attack status {Fore.MAGENTA} {Fore.YELLOW} {remaining:.2f} {Fore.LIGHTBLUE_EX}sec left ")
             print(f"\r{Fore.WHITE}[{Fore.GREEN}Fit'84{Fore.WHITE}] {Fore.RED} =>  {Fore.WHITE}Status attack {Fore.GREEN} => {url} {Fore.CYAN} {remaining:.2f} {Fore.WHITE}sec left ")
         else:
             stdout.flush()
