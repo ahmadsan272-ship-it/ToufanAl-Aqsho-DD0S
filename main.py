@@ -24,15 +24,15 @@ def log_attack_status(message, level='info', print_to_terminal=True):
     if level == 'info':
         logging.info(message)
         if print_to_terminal:
-            print(f"{Fore.CYAN}|    [INFO] {message.ljust(63)}|")
+            print(f"{Fore.CYAN} [INFO] {message.ljust(63)}")
     elif level == 'error':
         logging.error(message)
         if print_to_terminal:
-            print(f"{Fore.RED}|    [ERROR] {message.ljust(63)}|")
+            print(f"{Fore.RED} [ERROR] {message.ljust(63)}")
     elif level == 'warning':
         logging.warning(message)
         if print_to_terminal:
-            print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
+            print(f"{Fore.YELLOW} [WARNING] {message.ljust(63)}")
 
 
 # Fungsi untuk Menampilkan Header JS dengan Warna
@@ -74,9 +74,10 @@ def countdown(t):
         if remaining_time > 0:
             stdout.flush() 
             stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
+            print(f"{Fore.GREEN}[{Fore.YELLOW}Fit'84{Fore.GREEN}] {Fore.CYAN}Target acquired: {Fore.WHITE}{host} {Fore.RED} {remaining:.2f}")
         else:
             stdout.flush()
-            stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Ahmar-WalAbyad {Fore.CYAN} Attack has been completed|\n")
+            stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Jejak-sunyi {Fore.CYAN} Attack has been completed|\n")
             print(f"{Fore.CYAN}<{'••' * 30}>")
             return
 
