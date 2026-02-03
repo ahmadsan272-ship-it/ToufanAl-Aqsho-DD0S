@@ -65,7 +65,7 @@ f"{Fore.YELLOW}▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒�
 def get_user_input(prompt_message):
     print(f"{Fore.GREEN}  ╭─jejak(sunyi)─⬣")
     print(f"{Fore.GREEN}╰─> [?] {prompt_message.ljust(63)}")
-    return input(f"{Fore.YELLOW}╰─>{' ' * 4}> ").strip()
+    return input(f"{Fore.YELLOW}╰─> ").strip()
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
 def countdown(t):
