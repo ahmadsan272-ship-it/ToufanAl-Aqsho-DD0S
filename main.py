@@ -56,8 +56,8 @@ f"{Fore.YELLOW}▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒�
 
     # Versi dan URL
     print(f"\033[37m╔{'═' * 66}╗")
-    print(f"\033[37m║\033[0m \033[41m{' ' * 10}Birruh Biddam nafdika yaa Aqsha {' ' * 20}\033[0m \033[27m║")
-    print(f"\033[37m║\033[0m \033[41m  Author By: KunFay'99{' ' * 46}\033[0m \033[30m║")
+    print(f"\033[37m║\033[0m \033[41m{' ' * 10}Birruh Biddam nafdika yaa Aqsha {' ' * 19}\033[0m \033[27m║")
+    print(f"\033[37m║\033[0m \033[41m  Author By: KunFay'99{' ' * 46}\033[0m \033[35m║")
     print(f"\033[37m╚{'═' * 66}╝") 
 
 
@@ -76,7 +76,7 @@ def countdown(t):
             time.sleep(1),
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}[{Fore.YELLOW}Fit'84{Fore.BLUE}]TargetAquired {target_url} {Fore.GREEN}{remaining_time:.2f}\n")
-            stdout.write(f"\r{Fore.YELLOW}[{Fore.CYAN}Fit'84{Fore.YELLOW}] {Fore.GREEN}TargetAquired {Fore.WHITE} {target_url} {Fore.MAGENTA} {warning}\n")
+            stdout.write(f"\r{Fore.YELLOW}[{Fore.CYAN}Fit'84{Fore.YELLOW}] {Fore.GREEN}TargetAquired {Fore.WHITE} {target_url} {Fore.MAGENTA} {Warning}\n")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.MAGENTA}[{Fore.YELLOW}Fit'84{Fore.MAGENTA}] {Fore.BLUE} Attack hasben complite\n")
