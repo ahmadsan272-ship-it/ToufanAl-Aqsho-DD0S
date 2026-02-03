@@ -59,26 +59,27 @@ f"{Fore.YELLOW}▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒�
     print(f"\033[37m║\033[0m \033[41m  Author By: KunFay'99{' ' * 46}\033[0m \033[37m║")
     print(f"\033[37m╚{'═' * 70}╝") 
 
+
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.LIGHTGREEN_EX} {prompt_message.ljust(63)}")
-    print(f"{Fore.WHITE}┏━━KunFayz━━━⬣")
-    return input(f"{Fore.WHITE}┗> {Fore.LIGHTBLUE_EX}").strip()
-    
+    print(f"{Fore.GREEN}|{' ' * 4}[?] {prompt_message.ljust(63)}|")
+    print(f"{Fore.GREEN}|{'=' * 74}|")
+    return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
 
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
 def countdown(t):
     until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
     while True:
         remaining_time = (until - datetime.datetime.now()).total_seconds()
-        if remaining_time > 0:
-            stdout.flush() 
-            stdout.write(f"\r{Fore.BLUE} [*] Attack status {Fore.YELLOW}=> {Fore.RED} {remaining_time:.2f} sec left {' ' * 26}")
-            print(f"{Fore.GREEN}[{Fore.YELLOW}Fit'84{Fore.GREEN}] {Fore.CYAN}Target acquired: {Fore.WHITE} {t} {Fore.RED} {remaining_time:.2f}\n")
+        if remaining_time > 1:
+            time.sleep(1),
+            stdout.flush()
+            stdout.write(f"\r{Fore.BLUE}[{Fore.RED}Fit'84{Fore.BLUE}] {Fore.GREEN}{remaining_time:.2f}{' ' * 26}\n")
+            stdout.write(f"\r{Fore.YELLOW}[{Fore.CYAN}Fit'84{Fore.YELLOW}] {Fore.BLUE}" +(url)+ " {Fore.MAGENTA}" +str(seconds)+ "")
         else:
             stdout.flush()
-            stdout.write(f"\r{Fore.RED}| [÷] {Fore.YELLOW}Jejak-sunyi {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.CYAN}<{'••' * 30}>")
+            stdout.write(f"\r{Fore.MAGENTA}[{Fore.YELLOW}Fit'84{Fore.MAGENTA}] {Fore.BLUE} Attack hasben complite\n")
+            print(f"{Fore.CYAN}|{'=' * 74}|")
             return
 
 # Validasi URL dan Parsing Target
@@ -93,7 +94,7 @@ def get_target(url):
         'scheme': urlparse(url).scheme,
         'port': urlparse(url).netloc.split(":")[1] if ":" in urlparse(url).netloc else ("443" if urlparse(url).scheme == "https" else "80")
     }
-    log_attack_status(f"Target acquired: {target['host']} ({target['scheme']}://{target['host']}:{target['port']}{target['uri']})")
+    log_attack_status(f"Target diperoleh: {target['host']} ({target['scheme']}://{target['host']}:{target['port']}{target['uri']})")
     return target
 
 # Fungsi Serangan Utama
@@ -101,7 +102,7 @@ def launch_attack(target_url, duration):
     target = get_target(target_url)
 
     # Inisialisasi Serangan dan Waktu Serangan
-    log_attack_status(f"Launching an attack on {target['host']} for {duration} second...")
+    log_attack_status(f"Meluncurkan serangan ke {target['host']} untuk {duration} detik...")
     countdown(duration)
 
 if __name__ == "__main__":
@@ -109,16 +110,16 @@ if __name__ == "__main__":
     display_header()
 
     # Prompt untuk input dari pengguna dengan tampilan yang rapi
-    target_url = get_user_input("Please enter the target URL:   ")
+    target_url = get_user_input("Masukkan target URL:   ")
     while not validators.url(target_url):
-        print(f"{Fore.RED}|    [ERROR] URL invalid. Try again.{' ' * 37}|")
-        print(f"{Fore.CYAN}{'••' * 10}")
-        target_url = get_user_input("Please enter the target URL :")
+        print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
+        print(f"{Fore.CYAN}|{'=' * 74}|")
+        target_url = get_user_input("Masukkan target URL:")
 
     try:
-        attack_duration = int(get_user_input("Enter attack duration (seconds):"))
+        attack_duration = int(get_user_input("Masukkan durasi serangan (detik):"))
     except ValueError:
         attack_duration = 60  # Default durasi
 
     # Luncurkan serangan
-    launch_attack(target_url, attack_duration)
+    launch_attack(target_url, attack_duration
